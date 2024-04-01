@@ -33,11 +33,11 @@ Please see the section below for a sample of the correct format.
 
 ### Sample Input and Output (Snippet)
 <p align="center">
-  <img src="dump/sample_in.png" alt="3D Plot" style="max-width:25%">
+  <img src="dump/sample_in.png" alt="Sample Input" style="max-width:25%">
 </p>
 
 <p align="center">
-  <img src="dump/sampel_out.png" alt="3D Plot" style="max-width:25%">
+  <img src="dump/sample_out.png" alt="Sample Output" style="max-width:25%">
 </p>
 
 ### Running the Program
