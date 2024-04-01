@@ -1,4 +1,6 @@
+# CS 21 LAB2 -- S2 AY 2022-2023
 # Rohan Solas -- 05/21/2023
+# cs21project1c.asm -- code for implementation c of project 1
 
 # REFERENCES
 # https://stackoverflow.com/questions/26320387/storing-a-very-large-string-in-a-mips-asciiz
@@ -853,44 +855,43 @@ backtrack: # $a0, currGrid; $a1, chosen; $a2, pieces
 	### preamble ###
 	
 	# $t0 - result
-	# print(chosen)
-	# print_grid(currGrid)
-    	# print()
-    	# result = False
-    	
-    	# move $s0, $a0
-    	# move $s1, $a1
-    	# move $s2, $a2
-    	# move $s3, $t1
-    	# move $s4, $t2
-    	# move $s5, $t3
-    	# move $s6, $t4
+
+    	# print(chosen)
+    	move $s0, $a0
+    	move $s1, $a1
+    	move $s2, $a2
+    	move $s3, $t1
+    	move $s4, $t2
+    	move $s5, $t3
+    	move $s6, $t4
     	# $a1 is chosen list
-    	# lw $a2, num_pieces
-    	# jal print_chosen_list # no return value; uses $a1, $t1, $t2, $t3, $t4               -> still unused by backtrack
-    	# move $a0, $s0
-    	# move $a1, $s1
-    	# move $a2, $s2
-    	# move $t1, $s3
-    	# move $t2, $s4
-    	# move $t3, $s5
-    	# move $t4, $s6
+    	lw $a2, num_pieces
+    	jal print_chosen_list # no return value; uses $a1, $t1, $t2, $t3, $t4               -> still unused by backtrack
+    	move $a0, $s0
+    	move $a1, $s1
+    	move $a2, $s2
+    	move $t1, $s3
+    	move $t2, $s4
+    	move $t3, $s5
+    	move $t4, $s6
     	
-    	# move $s0, $a0
-    	# move $s1, $a1
-    	# move $s2, $t0
-    	# move $s3, $t1
-    	# move $s4, $t2
-    	# move $s5, $t3
-    	# move $a1, $a0
-    	# jal print_grid # no return value; uses $a1, $t0, $t1, $t2, $t3                           -> still unused by backtrack
-    	# print_str(newline)
-    	# move $a0, $s0
-    	# move $a1, $s1
-    	# move $t0, $s2
-    	# move $t1, $s3
-    	# move $t2, $s4
-    	# move $t3, $s5
+    	# print_grid(currGrid)
+    	move $s0, $a0
+    	move $s1, $a1
+    	move $s2, $t0
+    	move $s3, $t1
+    	move $s4, $t2
+    	move $s5, $t3
+    	move $a1, $a0
+    	jal print_grid # no return value; uses $a1, $t0, $t1, $t2, $t3                           -> still unused by backtrack
+    	# print()
+    	print_str(newline)
+    	move $a0, $s0
+    	move $a1, $s1
+    	move $t0, $s2
+    	move $t1, $s3
+    	move $t2, $s4
+    	move $t3, $s5
     	
     	li $t0, 0 # result = False
     	
