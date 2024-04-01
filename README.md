@@ -1,4 +1,4 @@
-# Tetrisito
+# Tetrisito Solver
 
 ## About the Project
 Tetrisito is a custom variant of the puzzle game Tetris. The game involves a 6x6 square grid of cells as its space and four-block pieces that fit on a smaller 4x4 grid. The following are the information provided beofre playing the game:
