@@ -17,7 +17,7 @@ As such, two outputs are possible:
 ### Input Format
 The program takes in multiple lines of input which are listed in order as follows:
 1. The initial 6x6 grid
-  - The grid contains 6 rows.
+  - The grid contains 6 rows, each separated by a newline.
   - Each row contains 6 ASCII characters
   - Each character may either be a period `.` indicating a blank space or a pound `#` indicating an occupied space.
 2. The goal 6x6 grid
@@ -25,9 +25,20 @@ The program takes in multiple lines of input which are listed in order as follow
 3. The number of pieces `n`
   -  `n` should be a number from `1` to `5`
 4. The `n` 4x4 pieces themselves
-  - The grid contains 4 rows.
+  - The grid contains 4 rows, each separated by a newline.
   - Each row contains 4 ASCII characters
   - Each character may either be a period `.` indicating a blank space or a pound `#` indicating an occupied space.
+
+Please see the section below for a sample of the correct format.
+
+### Sample Input and Output (Snippet)
+<p align="center">
+  <img src="dump/sample_in.png" alt="3D Plot" style="max-width:25%">
+</p>
+
+<p align="center">
+  <img src="dump/sampel_out.png" alt="3D Plot" style="max-width:25%">
+</p>
 
 ### Running the Program
 To run the program, do the following:
